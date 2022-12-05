@@ -1,0 +1,47 @@
+[
+    {
+        "model": "api.movie",
+        "pk": 1,
+        "fields": {
+            "title": "Titanic",
+            "likes": -12600,
+            "reason": "Current depth of Titanic in feet."
+        }
+    },
+    {
+        "model": "api.movie",
+        "pk": 2,
+        "fields": {
+            "title": "Pacific Rim",
+            "likes": 7080,
+            "reason": "Weight of Gypsy Danger in tons"
+        }
+    },
+    {
+        "model": "api.movie",
+        "pk": 3,
+        "fields": {
+            "title": "Forrest Gump",
+            "likes": 75,
+            "reason": "The IQ of Forrest Gump."
+        }
+    },
+    {
+        "model": "api.movie",
+        "pk": 4,
+        "fields": {
+            "title": "The Hitchhiker's Guide to the Galaxy",
+            "likes": 42,
+            "reason": "The meaning of existence in the universe."
+        }
+    },
+    {
+        "model": "api.movie",
+        "pk": 5,
+        "fields": {
+            "title": "Ferris Beuller's Day Off",
+            "likes": 11,
+            "reason": "June 5, 1985 is the day Ferris Beuller went to an 11-inning Chicago Cubs game against the Atlanta Braves."
+        }
+    }
+]
