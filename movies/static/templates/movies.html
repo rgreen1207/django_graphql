@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul>
+        {% for movie in movies %}
+            <li class="movie-li">
+                <div>
+                    <h2>{{ movie.title }}</h2>
+                    <h3>{{ movie.likes }}</h3>
+                    <span>
+                        <button type="button" class="btn btn-up">+</button>
+                        <button type="button" class="btn btn-down">-</button>
+                    </span>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
