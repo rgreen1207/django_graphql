@@ -27,6 +27,6 @@ def updateMovieLikesDown(request, pk):
     return HttpResponseRedirect(reverse(list))
 
 def delete(request, pk):
-  movie = Movie.objects.get(id=pk)
-  movie.delete()
-  return HttpResponseRedirect(reverse(list))
+    movie = Movie.objects.get(id=pk)
+    movie.delete()
+    return HttpResponseRedirect(reverse(list))
