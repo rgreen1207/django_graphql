@@ -2,8 +2,9 @@ Steps for setup:
 1. create local env `python -m venv env`
 2. `source env/bin/activate activate`
 3. `pip install django graphene-django`
-4. `python manage.py runserver`
-5. navigate to /movies (currently, movies are only being listed)
+4. `cd /movies`
+5. `python manage.py runserver`
+6. navigate to /movies in browser window
 ---
 ---
 ---
