@@ -1,18 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <ul>
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <ul class="list-unstyled">
         {% for movie in movies %}
-            <li class="movie-li">
-                <div>
-                    <h2>{{ movie.title }}</h2>
-                    <h3>{{ movie.likes }}</h3>
-                    <span>
-                        <button type="button" class="btn btn-up">+</button>
-                        <button type="button" class="btn btn-down">-</button>
-                    </span>
+            <li>
+                <div class="card" style="width: 27rem;">
+                    <div class="card-body" style="text-align: center">
+                        <h5 class="card-title">{{ movie.title }}</h5>
+                        <h6 class="card-text">Likes: {{ movie.likes }}</h6>
+                            <button type="button" class="btn btn-up" name="up">
+                                <a href="updateUp/{{movie.id}}">Likes++</a></button>
+                            <button type="button" class="btn btn-up" name="down">
+                                <a href="updateDown/{{movie.id}}">Likes--</a></button>
+                    </div>
                 </div>
             </li>
         {% endfor %}
     </ul>
+<div>
 {% endblock %}
